@@ -1,0 +1,55 @@
+.service {
+  &__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet {
+      max-width: unset;
+      padding: 30px 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  &__item {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px #ccc;
+    background-color: #fff;
+    height: 100px;
+    @include tablet {
+      flex: 1;
+      padding: 6px 8px;
+    }
+    &:hover {
+      box-shadow: 2px 3px 10px #ccc;
+    }
+    &__text {
+      text-transform: capitalize;
+      h4 {
+        font-weight: 600;
+        font-size: 14px;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        @include mobile {
+          font-size: 11px;
+        }
+      }
+    }
+    svg {
+      opacity: 0.85;
+    }
+  }
+}

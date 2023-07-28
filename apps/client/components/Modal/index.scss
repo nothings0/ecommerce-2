@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 520px;
+    max-width: calc(100vw - 32px);
+    min-height: 180px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 8%), 0 3px 6px -4px rgb(0 0 0 / 12%),
+      0 9px 28px 8px rgb(0 0 0 / 5%);
+    animation: fadeIn ease-in 0.2s;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    h3 {
+      font-weight: 500;
+    }
+    .icon {
+      padding: 5px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: #dc2626;
+        color: #fff;
+      }
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 20px;
+    margin-top: 18px;
+  }
+}

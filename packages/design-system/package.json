@@ -1,0 +1,23 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "types": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@mantine/core": "^6.0.11",
+    "@mantine/hooks": "^6.0.11",
+    "react-query": "^3.39.3",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "tsconfig": "*"
+  }
+}

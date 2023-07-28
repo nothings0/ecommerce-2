@@ -1,0 +1,41 @@
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  &.sm {
+    padding: 8px;
+  }
+  &.md {
+    padding: 8px 16px;
+  }
+  &.lg {
+    padding: 8px 28px;
+  }
+  &.primary {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  &.ok {
+    background: #0dd995;
+    color: #fff;
+  }
+  &.cancel {
+    background: #dbdcdf;
+    color: #262626;
+  }
+  &.outline {
+    color: #0dd995;
+    border: 1px solid#0dd995;
+    background: transparent;
+  }
+  &.outlineactive {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background: transparent;
+  }
+}
